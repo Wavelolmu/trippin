@@ -1,0 +1,68 @@
+@import "reset.css";
+
+@import "fonts.css";
+
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+body {
+  font-family: "Neue Machina";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 100%;
+  transform: rotate(-90deg);
+  height: 30px;
+  width: 100vh;
+  transform-origin: 0 0;
+  padding: 10px 0 0 0px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+header li, button {
+  cursor: pointer;
+}
+
+#logo,
+#search {
+  height: 30px;
+  transform: rotate(-270deg);
+}
+
+header button {
+  border: 0;
+  background: none;
+}
+
+header a {
+  color: black;
+}
+
+.header_textitem {
+  padding: 10px 15px;
+  border: 1px solid transparent;
+}
+
+.header_textitem:hover {
+  border: 1px solid black;
+  border-radius: 30px;
+}
